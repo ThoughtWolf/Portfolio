@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+html,
+body {
+    overflow: hidden;
+    margin: 0%;
+    height: 100%;
+}
+
+body {
+    background-color: #040c24;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#preloadedImages {
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url("./assets/mercury.png");
+}
+
+#heading {
+    position: absolute;
+    text-align: center;
+    left: 500px;
+    top: 100px;
+    width: 500px;
+    height: fit-content;
+    color: rgba(255, 255, 255, 1);
+    z-index: 11;
+}
+
+#nameHeading {
+    position: absolute;
+    top: 50px;
+    width: 500px;
+    left: -108px;
+    z-index: 12;
+}
+
+#headingName {
+    font-size: 35px;
+}
+
+#intro {
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 110px;
+    left: 250px;
+    width: 600px;
+    text-align: left;
+    z-index: 14;
+}
+
+#introText {
+    font-size: 16px;
+}
+
+#sun {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    background-image: url("./assets/Venus-PNG-Pic.png");
+    background-origin: border-box;
+    background-position: center;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#atmosphere {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    left: 50%;
+    width: 750px;
+    height: 750px;
+    background: radial-gradient(circle at center, rgba(235, 208, 130, 1) 0%, rgba(235, 208, 130, 0) 70%, #040c24 100%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#nextBtn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    left: calc(100% - 50px);
+    top: 55%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 35px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    transition: color 1s ease-in;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 36px;
+}
+
+#prevBtn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    left: 50px;
+    top: 55%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 35px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#prevBtn:hover {
+    transition: color 1s ease-in;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 36px;
+}
+
+#github-link {
+    z-index: 10;
+}
+
+.fa-github {
+    position: absolute;
+    top: 92%;
+    left: 40px;
+    text-decoration: none;
+    z-index: 10;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.fa-github:hover {
+    transition: color 1s ease-in;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+#nextBtnLink {
+    text-decoration: none;
+}
+
+.poi {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.poi:hover {
+    transition: color 1s ease-in;
+    transition: width .5s ease-in, height .5s ease-in;
+    width: 25px;
+    height: 25px;
+    background-color: #D6F1FA;
+}
+
+#poi-1 {
+    left: 490px;
+    top: 650px;
+}
+
+#poi-2 {
+    left: 530px;
+    top: 600px
+}
+
+#poi-3 {
+    left: 550px;
+    top: 720px;
+}
+
+#poi-4 {
+    left: 730px;
+    top: 450px;
+}
